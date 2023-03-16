@@ -14,9 +14,13 @@
         
         <!-- Navigation Bar -->
         <nav class="bg-deepBlue w-full">
-            <div class="w-[97%] max-w-[1300px] mx-auto pt-[16px] pb-[16px] flex items-center justify-between">
-                <img src="images/logo.svg" alt="" class="w-[160px] h-[35px] text-white">
-                <div class="flex justify-between gap-5 font-ggSans font-semibold">
+
+            <div class="max-w-[1200px] mx-auto pt-[16px] pb-[16px] flex items-center justify-between xl:px-0 px-7">
+                <!-- Icon -->
+                <img src="images/logo.svg" alt="">
+
+                <!-- Middle Icons List -->
+                <div class="justify-between gap-5 font-ggSans font-semibold hidden xl:flex">
                     <a href="#" class="text-white hover:underline cursor-pointer ">Download</a>
                     <a href="#" class="text-white hover:underline cursor-pointer ">Nitro</a>
                     <a href="#" class="text-white hover:underline cursor-pointer ">Discover</a>
@@ -25,111 +29,177 @@
                     <a href="#" class="text-white hover:underline cursor-pointer ">Blog</a>
                     <a href="#" class="text-white hover:underline cursor-pointer">Carrers</a>
                 </div>
-                <a href="#" class="text-[#2c2f33] rounded-full font-[500] font-ggSans mr-3 px-4 p-2 text-[14px] bg-white">
+
+                <!--Right Side End Button  -->
+                <a href="#" class="text-[#2c2f33] rounded-full font-[500] font-ggSans mr-3 px-4 p-2 text-[14px] bg-white hidden xl:block">
                     Open Discord
                 </a>
+
+                <!-- Small Devices Hammberg Icon Right End -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-menu text-white text-xs cursor-pointer xl:hidden">
+                        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
 
             </div>
 
         </nav>
 
+
         <!-- Hero Section -->
-        <section class="heroSection relative h-[555px] bg-[#404EED] ">
+        <section class="heroSection relative xl:h-[555px] h-[650px] bg-[#404EED] -mt-[2px] ">
 
-            <img src="images/Image0.svg" alt="" class="absolute bottom-0 ">
-            <img src="images/Image1.svg" alt="" class="absolute bottom-0 left-[40.5%] z-10">
-            <img src="images/Image2.svg" alt="" class="absolute bottom-0 left-[11%] z-10">
-
+            <div class="max-w-[1200px] xl:mx-auto px-7">
+                <img src="images/Image0.svg" alt="" class="absolute bottom-0 hidden xl:block">
+                <img src="images/Image1.svg" alt="" class="absolute bottom-0 xl:-right-[28%] -right-[15%] z-10 hidden md:block">
+                <img src="images/Image2.svg" alt="" class="absolute bottom-0 xl:-left-[31%] -left-[5%] z-10 md:max-xl:hidden">
+                
             <!-- Content -->
-            <div class="flex flex-col justify-center items-center max-w-[800px] pt-[120px] mx-auto">
-                <h1 class="text-white font-[800] text-center text-[56px] font-['GintoNord'] z-20 ">IMAGINE A PLACE...</h1>
-                <p class=" font-[400] font-ggSans text-white text-center text-[20px] leading-[32.5px] mt-6 z-20">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
-                <div class="flex flex-row item-center justify-center gap-10 font-[500] mt-[20px] z-20">
-                    <a href="#" class="bg-white text-black p-3 px-7 rounded-full hover:text-[#404EED]">
-                      <p>
-                        <i class="fa-solid fa-download mr-2"></i>
-                        Download for Windows
-                      </p>
-                    </a>
-                    <a href="#" class="bg-[#23272a] text-white p-3 px-7 rounded-full">
-                      Open Discord in your browser</a>
-                  </div>
+                <div class="flex flex-col xl:justify-center xl:items-center md:max-w-[800px] xl:pt-[120px] xl:mx-auto max-xl:pt-[50px]">
+                    <h1 class="text-white font-[800] xl:text-center md:text-[56px] text-[34px] font-['GintoNord'] z-20 ">IMAGINE A PLACE...</h1>
+                    <p class="font-[400] font-['gg sans'] text-white md:max-xl:max-w-[70%] xl:max-w-[100%] max-w-[90%] leading-[26px] md:text-[20px] text-[16px] xl:text-center xl:text-[20px] xl:leading-[32.5px] mt-6 z-20">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+                    
+                    <!-- Buttons -->
+                    <div class="item-center justify-center gap-10 font-[500] mt-[20px] z-20 hidden xl:flex">
+                        <a href="#" class="bg-white text-black p-3 px-7 rounded-full hover:text-[#404EED]">
+                        <p>
+                            <i class="fa-solid fa-download mr-2"></i>
+                            Download for Windows
+                        </p>
+                        </a>
+                        <a href="#" class="bg-[#23272a] text-white p-3 px-7 rounded-full">
+                        Open Discord in your browser</a>
+                    </div>
+
+                    <!-- Small Devices Play Store Button -->
+                    <div class="flex item-center xl:justify-center gap-10 font-[500] mt-[20px] z-20 xl:hidden">
+                        <a href="#" class="bg-white text-black p-3 px-7 rounded-full hover:text-[#404EED]">
+                        <p>
+                            <i class="fa-solid fa-download mr-2"></i>
+                            Download from Google Play
+                        </p>
+                        </a>
+                    </div>
+ 
+                </div>
             </div>
-            
 
         </section>
+
 
         <!-- Section 1 -->
         <section>
-            <div class="flex max-w-[1200px] space-x-[90px] py-36 items-center justify-center mx-auto">
-                <img src="images/section1Image.svg" alt="" class="w-[50%] ">
-                <div class="w-[50%]">
-                    <h1 class="font-bold text-[48px] max-w-[360px] leading-[58px] font-ggSans">Create an invite-only place where you belong</h1>
-                    <p class="font-ggSans max-w-[360px] text-[20px] pt-6">
-                        Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.
-                    </p>
+
+            <div class="flex flex-col max-w-[1200px] container py-14 md:py-36 items-center mx-auto md:flex-row px-7 md:px-0">
+
+                <!-- Left Side Image -->
+                <div class="md:w-[50%]">
+                    <img src="images/section1Image.svg" alt="">
+                </div>
+                <!-- Right Side Content -->
+                <div class="md:w-[50%] ">
+                    <div class="w-[95%] xl:w-[60%] mx-auto">
+                        <h1 class="font-[700] sm:text-[28px] text-[20px] md:text-[48px] leading-[24px] md:leading-[57.6px] font-['ggSans']">Create an invite-only place where you belong</h1>
+                        <p class="font-[400] font-['ggSans'] text-[16px] sm:text-[20px] pt-6">
+                            Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.
+                        </p>
+                    </div>
 
                 </div>
 
             </div>
         </section>
 
+
         <!-- Section 2 -->
         <section class="bg-[#f6f6f6]">
-            <div class="flex max-w-[1200px] space-x-[90px] py-36 items-center justify-center mx-auto">
-                <div class="w-[50%] ml-[120px]">
-                    <h1 class="font-bold text-[48px] max-w-[360px] leading-[58px] font-ggSans">Where hanging out is easy</h1>
-                    <p class="font-ggSans max-w-[360px] text-[20px] pt-6">
-                        Grab a seat in a voice channel when you're free. Friends in your server can see you're around and instantly pop in to talk without having to call.
-                    </p>
+           
+            <div class="flex flex-col-reverse container max-w-[1200px] px-7 md:px-0 py-14 md:py-36 items-center mx-auto md:flex-row">
+                <!-- Left Side Content -->
+                <div class="md:w-[50%]">
+                    <div class="xl:w-[60%] w-[95%] mx-auto">
+                        <h1 class="font-[700] md:text-[48px] text-[20px] sm:text-[28px] md:mt-0 mt-[16px] md:leading-[57.6px] leading-[24px] font-['ggSans']">Where hanging out is easy</h1>
+                        <p class="font-['ggSans'] text-[16px] sm:text-[20px] mt-[24px]">
+                            Grab a seat in a voice channel when you're free. Friends in your server can see you're around and instantly pop in to talk without having to call.
+                        </p>
+                    </div>
 
                 </div>
-                <img src="images/section2Image.svg" alt="" class="w-[50%] ">
+                <!-- Right Side Image -->
+                <img src="images/section2Image.svg" alt="" class="md:w-[50%] ">
                 
 
             </div>
         </section>
 
+
         <!-- Section 3 -->
         <section>
-            <div class="flex max-w-[1200px] space-x-[90px] py-36 items-center justify-center mx-auto">
-                <img src="images/section3Image.svg" alt="" class="w-[50%] ">
-                <div class="w-[50%]">
-                    <h1 class="font-bold text-[48px] max-w-[360px] leading-[58px] font-ggSans">From few to a fandom</h1>
-                    <p class="font-ggSans max-w-[360px] text-[20px] pt-6">
-                        Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.
-                    </p>
+
+            <div class="flex flex-col max-w-[1200px] container px-7 md:px-0 md:py-36 py-14 items-center mx-auto md:flex-row">
+
+                <!-- Left Side Image -->
+                <img src="images/section3Image.svg" alt="" class="md:w-[50%] ">
+                <!-- Right Side Content -->
+                <div class="md:w-[50%]">
+                    <div class="xl:w-[60%] w-[95%] mx-auto">
+                        <h1 class="font-[700] md:text-[48px] text-[20px] sm:text-[28px] md:mt-0 mt-[16px] md:leading-[57.6px] leading-[24px] font-['ggSans']">From few to a fandom</h1>
+                        <p class="font-['ggSans'] text-[16px] sm:text-[20px] mt-[24px]">
+                            Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.
+                        </p>
+                    </div>
 
                 </div>
 
             </div>
         </section>
+
 
         <!-- Section 4 -->
         <section class="bg-[#f6f6f6]">
-            <div class="flex flex-col max-w-[1300px] py-32 items-center justify-center">
-                <div class="flex flex-col space-y-3 w-[80%] mx-auto text-center pb-5">
-                    <h2 class="font-[800] text-center text-[40px] font-['GintoNord'] ">RELIABLE TECH FOR STAYING CLOSE</h2>
-                    <p class="font-ggSans text-[22px] text-center">Low-latency voice and video feels like you're in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+
+            <div class="flex flex-col max-w-[1200px] py-14 md:py-32 items-center mx-auto px-5">
+
+                <!-- Heading Content -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="font-[800] md:text-center text-left text-[20px] md:text-[40px] font-['GintoNord'] md:leading-[32px] leading-[19px]">RELIABLE TECH FOR STAYING CLOSE</h2>
+                    <p class="font-['ggSans'] text-[16px] md:text-[20px] leading-[26px] mt-[24px] md:leading-[32.5px] md:text-center text-left md:w-[83%] md:mx-auto">Low-latency voice and video feels like you're in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
 
                 </div>
-                <img src="images/section4Image.svg" alt="" class="w-[92%]">
-                <img src="images/section5Image.svg" alt="" class="w-[45%]">
-                <h2 class="font-ggSans w-[40%] text-center font-bold text-[32px] -mt-6">Ready to start your journey?</h2>
-                <a href="#" class="flex items-center text-white bg-deepBlue py-4 px-10 mt-6 gap-2 rounded-full">
-                    <i class="fa-solid fa-download"></i>
-                    <p class="font-ggSans font-[500] text-[20px]">Download for Windows</p>
 
-                </a>
+                <!-- Main Image -->
+                <img src="images/section4Image.svg" alt="" class="w-[100%]">
+
+                <!-- Bottom Buttons -->
+                <div class="flex flex-col items-center md:mt-0 mt-12">
+                    <!-- Background Stars Images -->
+                    <img src="images/section5Image.svg" alt="" class="w-[100%] hidden md:block">
+                    <!-- Download Buttons -->
+                    <h2 class="font-['ggSans'] w-[100%] text-left md:text-center font-bold text-[32px] -mt-6">Ready to start your journey?</h2>
+                    <a href="#" class="flex items-center text-white justify-center bg-deepBlue py-[16px] px-[32px] mt-6 gap-2 rounded-3xl lg:rounded-full font-[500] text-[20px]">
+                        <i class="fa-solid fa-download"></i>
+                        <p class="font-['ggSans'] font-[500] text-[20px] hidden md:block">Download for Windows</p>
+                        <!-- For Small Devices -->
+                        <p class="font-['ggSans'] font-[500] text-[20px] block md:hidden">Download from Google Play</p>
+                    
+                    </a>
+
+                </div>
+
             </div>
+
         </section>
+
 
         <!-- Footer Section -->
         <footer class="bg-[#23272a]">
             <div class="max-w-[1200px] px-5 pt-24 mx-auto">
-                <div class="flex pb-10">
+                <!-- Top Part -->
+                <div class="flex pb-10 flex-wrap md:flex-nowrap ">
                     <!-- Block 1 -->
-                    <div class="flex flex-col space-y-7 mr-36">
+                    <div class="flex flex-col space-y-7 max-w-[250px] mr-36">
                         <h2 class="font-[800] text-deepBlue text-[32px] font-['GintoNord'] leading-8">IMAGINE A PLACE</h2>
                         <div class="flex gap-6 text-white text-[23px]">
                             <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -141,59 +211,66 @@
 
                     </div>
 
+                    <!--Grid -->
                     <!-- Block 2 -->
-                    <div class="flex flex-col w-[25%] space-y-3">
-                        <a href="#" class="font-ggSans text-deepBlue">Product</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Download</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Nitro</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Status</a>
+                    <div class="grid grid-cols-2 xl:grid-cols-4 justify-items-start w-full mt-12 md:mt-0 xl:gap-y-0 gap-y-12" >
+                        <div class="flex flex-col  space-y-3">
+                            <a href="#" class="font-ggSans text-deepBlue">Product</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Download</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Nitro</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Status</a>
 
-                    </div>
+                        </div>
 
-                    <!-- Block 3 -->
-                    <div class="flex flex-col w-[25%] space-y-3">
-                        <a href="#" class="font-ggSans text-deepBlue">Company</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">About</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Jobs</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Branding</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Newsroom</a>
+                        <!-- Block 3 -->
+                        <div class="flex flex-col space-y-3">
+                            <a href="#" class="font-ggSans text-deepBlue">Company</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">About</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Jobs</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Branding</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Newsroom</a>
 
-                    </div>
+                        </div>
 
-                    <!-- Block 4 -->
-                    <div class="flex flex-col w-[25%] space-y-3">
-                        <a href="#" class="font-ggSans text-deepBlue">Resources</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Colleges</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Support</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Safety</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Blog</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Feedback</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Developers</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">StreamKit</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Creators</a>
+                        <!-- Block 4 -->
+                        <div class="flex flex-col space-y-3">
+                            <a href="#" class="font-ggSans text-deepBlue">Resources</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Colleges</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Support</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Safety</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Blog</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Feedback</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Developers</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">StreamKit</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Creators</a>
 
-                    </div>
+                        </div>
 
-                    <!-- Block 5 -->
-                    <div class="flex flex-col w-[25%] space-y-3">
-                        <a href="#" class="font-ggSans text-deepBlue">Policies</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Terms</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Privacy</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Cookie Settings</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Guidelines</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Acknowledgements</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Licenses</a>
-                        <a href="#" class="font-ggSans text-white hover:underline">Moderation</a>
+                        <!-- Block 5 -->
+                        <div class="flex flex-col space-y-3">
+                            <a href="#" class="font-ggSans text-deepBlue">Policies</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Terms</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Privacy</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Cookie Settings</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Guidelines</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Acknowledgements</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Licenses</a>
+                            <a href="#" class="font-ggSans text-white hover:underline">Moderation</a>
 
+                        </div>
                     </div>
 
                 </div>
 
+                <!--Bottom Part  -->
+                <!-- Div Line -->
                 <div class="w-[100%] h-[2px] bg-deepBlue"></div>
 
                 <div class="flex justify-between pt-8 pb-8">
+                    <!-- Icon -->
                     <img src="images/logo.svg" alt="" width="150px" height="35px">
-                    <a href="#" class="px-[16px] py-[7px] bg-deepBlue leading-[24px] rounded-full text-white font-[500] text-[14px]">Sign up</a>
+                    <!-- Sign Up Button and Download Button for small devices -->
+                    <a href="#" class="px-[16px] py-[7px] bg-deepBlue leading-[24px] rounded-full text-white font-[500] text-[14px]"><span class="hidden xl:block">Sign up</span><span class="xl:hidden">Download</span></a>
 
                 </div>
 
